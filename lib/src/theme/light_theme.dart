@@ -84,6 +84,7 @@ final lightTheme = ThemeData(
     ),
   )),
   brightness: Brightness.light,
+  
   inputDecorationTheme: const InputDecorationTheme(
     prefixStyle: TextStyle(
         fontSize: 18, fontFamily: 'PoppinsRegular', color: Colors.black),

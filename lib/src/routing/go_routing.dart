@@ -1,5 +1,6 @@
 import 'package:auth_with_bloc/src/features/auth/presentation/login.dart';
 import 'package:auth_with_bloc/src/features/auth/presentation/register.dart';
+import 'package:auth_with_bloc/src/features/home/presentation/home_screen.dart';
 import 'package:auth_with_bloc/src/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:go_router/go_router.dart';
 
@@ -21,6 +22,11 @@ final GoRouter router = GoRouter(
       name: 'onboarding',
       path: "/",
       builder: (context, state) => const OnboardingScreen(),
+    ),
+    GoRoute(
+      name: 'home',
+      path: "/home",
+      builder: (context, state) => const HomeScreen(),
     ),
   ],
 );
