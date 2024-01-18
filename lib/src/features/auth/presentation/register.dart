@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -71,7 +72,11 @@ class RegisterScreen extends StatelessWidget {
             children: [
               const Text('Already have an account?',
                   style: TextStyle(color: Colors.grey)),
-              TextButton(onPressed: () {}, child: const Text(' Login')),
+              TextButton(
+                  onPressed: () {
+                    GoRouter.of(context).push("/login");
+                  },
+                  child: const Text(' Login')),
             ],
           )
         ],

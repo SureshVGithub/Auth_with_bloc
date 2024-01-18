@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -55,7 +56,9 @@ class _LoginScreenState extends State<LoginScreen> {
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.02,
           ),
-          ElevatedButton(onPressed: () {}, child: const Text('Login')),
+          ElevatedButton(onPressed: () {
+
+          }, child: const Text('Login')),
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.02,
           ),
@@ -64,7 +67,10 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               const Text('Do not you have an account?',
                   style: TextStyle(color: Colors.grey)),
-              TextButton(onPressed: () {}, child: const Text(' register')),
+              TextButton(onPressed: () {
+                            GoRouter.of(context).push("/login");
+
+              }, child: const Text(' Register')),
             ],
           )
         ],

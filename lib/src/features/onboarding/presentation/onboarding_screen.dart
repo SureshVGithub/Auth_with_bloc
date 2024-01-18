@@ -1,5 +1,6 @@
 import 'package:auth_with_bloc/src/utils/constants/color_constants.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -9,7 +10,9 @@ class OnboardingScreen extends StatelessWidget {
     return Scaffold(
       // backgroundColor: Colors.transparent,
       floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).push("/register");
+          },
           backgroundColor: ColorConstants.buttonColor,
           child: const Icon(Icons.arrow_forward)),
       backgroundColor: ColorConstants.onboardingColor2,
