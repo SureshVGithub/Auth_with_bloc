@@ -1,3 +1,4 @@
+import 'package:auth_with_bloc/src/utils/constants/color_constants.dart';
 import 'package:flutter/material.dart';
 
 final lightTheme = ThemeData(
@@ -19,14 +20,15 @@ final lightTheme = ThemeData(
       fontWeight: FontWeight.w600,
     ),
     titleMedium: TextStyle(
-      fontSize: 30,
+      fontSize: 26,
+      fontWeight: FontWeight.w700,
     ),
     titleSmall: TextStyle(
       fontSize: 24,
     ),
     bodyLarge: TextStyle(
       fontSize: 18,
-      fontWeight: FontWeight.bold,
+      // fontWeight: FontWeight.bold,
     ),
     //Text widget
     bodyMedium: TextStyle(
@@ -58,8 +60,8 @@ final lightTheme = ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      minimumSize: const Size.fromHeight(56), // NEW
-      backgroundColor: Colors.black,
+      minimumSize: const Size.fromHeight(60), // NEW
+      backgroundColor: ColorConstants.buttonColor,
       foregroundColor: Colors.white,
       textStyle: const TextStyle(
         fontWeight: FontWeight.w700,
@@ -67,7 +69,7 @@ final lightTheme = ThemeData(
         fontFamily: 'PoppinsRegular',
       ),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(8.0),
+        borderRadius: BorderRadius.circular(35.0),
       ),
       elevation: 4,
       shadowColor: const Color(0xF4845F82),
@@ -86,23 +88,27 @@ final lightTheme = ThemeData(
     prefixStyle: TextStyle(
         fontSize: 18, fontFamily: 'PoppinsRegular', color: Colors.black),
     hintStyle: TextStyle(
-        fontSize: 16, fontFamily: 'PoppinsRegular', color: Colors.black),
+        fontSize: 16, fontFamily: 'PoppinsRegular', color: Colors.grey),
     labelStyle: TextStyle(
-        fontSize: 16, fontFamily: 'PoppinsRegular', color: Colors.black),
+        fontSize: 16, fontFamily: 'PoppinsRegular', color: Colors.grey),
     counterStyle: TextStyle(
         fontSize: 16, fontFamily: 'PoppinsRegular', color: Colors.black),
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+      borderRadius: BorderRadius.all(Radius.circular(35.0)),
+    ),
+    disabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(color: ColorConstants.greyColor),
+      borderRadius: BorderRadius.all(Radius.circular(35.0)),
     ),
     enabledBorder: OutlineInputBorder(
-      borderSide: BorderSide(color: Colors.grey),
-      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+      borderSide: BorderSide(color: ColorConstants.greyColor),
+      borderRadius: BorderRadius.all(Radius.circular(35.0)),
     ),
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: Colors.grey,
+        color: Colors.black,
       ),
-      borderRadius: BorderRadius.all(Radius.circular(10.0)),
+      borderRadius: BorderRadius.all(Radius.circular(35.0)),
     ),
   ),
   progressIndicatorTheme:

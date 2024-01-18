@@ -1,4 +1,4 @@
-import 'package:auth_with_bloc/src/features/onboarding/presentation/onboarding_screen.dart';
+import 'package:auth_with_bloc/src/features/auth/presentation/register.dart';
 import 'package:auth_with_bloc/src/theme/light_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: lightTheme,
       title: 'Flutter Demo',
 
-      home: const OnboardingScreen(),
+      home: const RegisterScreen(),
     );
   }
 }

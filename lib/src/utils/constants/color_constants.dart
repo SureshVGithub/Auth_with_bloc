@@ -6,8 +6,8 @@ class ColorConstants {
 
   static const Color onboardingColor2 = Color(0xff02298A);
   static const Color onboardingColor3 = Color(0x0f021b79);
-  static const Color pinEnbledColor = Color(0xffF7B267);
-  static const Color greyColor = Color(0xffBBBBBB);
+  static const Color pinEnbledColor = Color.fromRGBO(247, 178, 103, 1);
+  static const Color greyColor = Color(0xffEEEEEE);
   static const Color chipGrey = Color(0xffECECEC);
   static const Color chipContentColor = Color(0xff797979);
   static const Color secondaryColor = Color(0xffFF4F5A);
