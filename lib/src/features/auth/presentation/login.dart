@@ -123,7 +123,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: TextStyle(color: Colors.grey)),
                 TextButton(
                   onPressed: () {
-                    GoRouter.of(context).push("/login");
+                    GoRouter.of(context).push("/register");
                   },
                   child: const Text(' Register'),
                 ),

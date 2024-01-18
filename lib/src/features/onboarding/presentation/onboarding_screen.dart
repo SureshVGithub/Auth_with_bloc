@@ -47,8 +47,6 @@ class OnboardingScreen extends StatelessWidget {
                     fontSize: 14),
               ),
             )
-            // ElevatedButton(onPressed: () {}, child: const Text('Read more'))
-            // Container(),
           ],
         ),
       ),
